@@ -1,6 +1,9 @@
-
 data/
-
 
 __pycache__/
 .env
+
+*.html
+*.csv
+*.pdf
+*.ipynb

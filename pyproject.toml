@@ -7,10 +7,17 @@ authors = ["3lLobo <flocwolf@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 PyPDF2 = "^2.10.0"
-black = "^22.6.0"
+black = {extras = ["jupyter"], version = "^22.6.0"}
 flair = "^0.11.3"
 python-env = "^1.0.0"
 tqdm = "^4.64.0"
+tika = "^1.24"
+pdfplumber = "^0.7.4"
+pandas = "^1.4.3"
+pyarrow = "^9.0.0"
+spacy = "^3.4.1"
+sklearn = "^0.0"
+contextualSpellCheck = "^0.4.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

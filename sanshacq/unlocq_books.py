@@ -21,7 +21,6 @@ def unlocq_sans_books(path_books: str, n_books: int):
         )
 
 
-
 if __name__ == "__main__":
     """Unlock the books"""
     path_books = "data/allBooqs/SEC450"
