@@ -1,4 +1,5 @@
 #  inspiration: https://learndataanalysis.org/how-to-extract-text-from-a-pdf-file-using-python/
+from typing import List
 from PyPDF2 import PdfFileReader, PdfFileWriter
 import os
 import tika
@@ -55,6 +56,16 @@ def extract_text_tika(pdf_path: str):
     content = parsed["content"]
     print(parsed["metadata"])
     print(parsed["content"])
+
+
+def extract_all(books: List):
+    """Run extract with plumber on a list of books.
+
+    Args:
+        books: List of book paths to extract
+    """
+    for book in tqdm(books):
+        extract_text_plumber(book)
 
 
 if __name__ == "__main__":

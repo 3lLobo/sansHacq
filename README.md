@@ -9,10 +9,17 @@ Use this repo to automatically generate an word/entity index of the class-books 
 ## How to use
 
 1. Drop your pdf files in `data/allBooqs/*`
-2. Adjust the file-names and count in `sanshacq/unlocq_books.py`.
-3. Run `/sanshacq/token_voc.py`.
-4. A csv file wih the index should be visible in `data/`.
+1. Use the naming convention ```<course_name>_<book_number>.pdf``` wiht numbers starting from 1.
+3. Run 🏃🏾‍♂️ the script.
+4. A csv file wih the index should appear in `data/index_<course_name>.csv`.
 5. STUDY!!!
+
+Install and execute (with Poetry package manager):
+```sh
+poetry install
+poetry run python run.py --course_name <> --n_books <>
+
+```
 
 ### ner-tagging
 
@@ -27,9 +34,9 @@ Run `sanshacq/n_gram.py` to have a look into the tf-idf score of the documents.
 
 Index:
 
--   keywords
+-   Join index table with Tdf-Idf score table
+-   Filter based  on score
 -   n-gram
--   Stop words:
 
 ## Spacy hacqs
 
