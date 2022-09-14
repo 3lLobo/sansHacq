@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-df = pd.read_csv("./data/SEC450_index_v01.csv")
+df = pd.read_csv("./data/SEC450_index.csv")
 
 # df = df.sort_values(['lemma'])
 
@@ -14,4 +14,4 @@ df = pd.read_csv("./data/SEC450_index_v01.csv")
 # TODO: find typos ✅
 
 
-df.to_csv("./data/SEC450_index_v01_asc.csv")
+df.to_csv("./data/SEC450_index_v01_fix.csv")
